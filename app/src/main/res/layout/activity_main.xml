@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="415dp"
+        android:layout_height="71dp"
+        android:background="#F4DE1C"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to Bhoj"
+        android:textAlignment="center"
+        android:textColor="#F10202"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="20dp"
+
+
+        android:orientation="horizontal"
+        android:weightSum="@android:integer/config_longAnimTime"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp">
+
+        <ImageView
+            android:id="@+id/Tiffin"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:background="#F6BA07"
+            android:contentDescription="@android:string/autofill"
+            android:onClick="OpenAddress"
+            android:src="@drawable/tiffin"
+            tools:targetApi="o_mr1"></ImageView>
+
+        <ImageView
+            android:id="@+id/Fastood"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="45dp"
+            android:background="#F6BA07"
+            android:contentDescription="@android:string/autofill"
+            android:onClick="OpenFastFoodMenu"
+            android:src="@drawable/fastfood"
+            android:textAlignment="center"
+            tools:targetApi="o_mr1"></ImageView>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/TiffinText"
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Tiffin"
+        android:textAlignment="center"
+        android:textColor="#FB0606"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"></TextView>
+
+    <TextView
+        android:id="@+id/FastFoodText"
+        android:layout_width="181dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Fast Food"
+        android:textAlignment="center"
+        android:textColor="#FB0606"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+
+    </TextView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="409dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Hometab"
+            android:layout_width="142dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="0mm"
+            android:layout_marginRight="0mm"
+            android:contentDescription="@android:string/autofill"
+            android:src="@drawable/baseline_home_24"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="o_mr1"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/Carttab"
+            android:layout_width="144dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20mm"
+            android:layout_marginRight="0dp"
+            android:contentDescription="@android:string/autofill"
+            android:src="@drawable/baseline_shopping_cart_24"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="o_mr1"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/ProfileTab"
+            android:layout_width="172dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="39mm"
+            android:layout_marginRight="0dp"
+            android:contentDescription="@android:string/autofill"
+            android:src="@drawable/baseline_person_24"
+            tools:ignore="MissingConstraints"
+            tools:targetApi="o_mr1">
+
+        </ImageButton>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
